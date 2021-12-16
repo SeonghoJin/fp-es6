@@ -1,0 +1,23 @@
+{
+  "name": "fpandes6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "홀수 n개 더하기.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeonghoJin/fpAndEs6.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeonghoJin/fpAndEs6/issues"
+  },
+  "homepage": "https://github.com/SeonghoJin/fpAndEs6#readme",
+  "dependencies": {
+    "fxjs": "^0.21.3"
+  },
+  "type": "module"
+}
