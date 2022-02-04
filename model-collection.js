@@ -2,7 +2,7 @@ import * as L from 'fxjs/Lazy';
 import * as C from 'fxjs/Concurrency'
 import * as _ from 'fxjs/Strict';
 
-class Model {
+export class Model {
     constructor(attrs = {}){
         this._attrs = attrs;
     }
@@ -17,7 +17,7 @@ class Model {
     }
 }
 
-class Collection {
+export class Collection {
     constructor(models = []) {
         this._models = models;
     }
@@ -36,14 +36,14 @@ class Collection {
     }
 }
 
-const coll = new Collection();
-coll.add(new Model({id: 1, name: 'AA'}))
-coll.add(new Model({id: 3, name: 'BB'}))
-coll.add(new Model({id: 5, name: 'CC'}))
-console.log(coll.at(2).get('name'));
+// const coll = new Collection();
+// coll.add(new Model({id: 1, name: 'AA'}))
+// coll.add(new Model({id: 3, name: 'BB'}))
+// coll.add(new Model({id: 5, name: 'CC'}))
+// console.log(coll.at(2).get('name'));
 
-_.go(
-    coll,
-    L.map(m => m.get('name')),
-    _.each(console.log)
-)
+// _.go(
+//     coll,
+//     L.map(m => m.get('name')),
+//     _.each(console.log)
+// )
