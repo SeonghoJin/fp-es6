@@ -8,7 +8,9 @@ const queryToObject = _.pipe(
     split('&'),
     L.map(split('=')),
     L.map(([k, v]) => ({[k]: v})),
-    _.reduce(Object.assign)
+    _.reduce((previous, current) => {
+        return Object.assign(previous, current);
+    })
 )
 
 console.log(queryToObject('a=1&c=CC&d=DD'))
